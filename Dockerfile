@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk
-COPY ./target/
-phase-3project-0.0.1-SNAPSHOT.jar phase-3project-0.0.1-SNAPSHOT.jar
-CMD ["java" ,"-jar","phase-3project-0.0.1-SNAPSHOT.jar"]
+COPY ./target/phase3-spring-ecom-webservice-10-06-2021-0.0.1-SNAPSHOT.jar phase3-spring-ecom-webservice-10-06-2021-0.0.1-SNAPSHOT.jar
+
+CMD ["java" ,"-jar",phase3-spring-ecom-webservice-10-06-2021-0.0.1-SNAPSHOT.jar"]
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 #-> Create a image for springboot webservice
